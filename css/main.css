@@ -39,7 +39,7 @@
     color: #2c3e50;
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 2.5em;
+    font-size: 3.5em;
     text-align: center; /* Centered title on small screens */
 }
 
@@ -63,7 +63,7 @@
 
 /* --- DESCRIPTION TEXT STYLES --- */
 .article-body-description {
-    font-size: 1.4em;
+    font-size: 2.0em;
     margin-bottom: 20px;
     text-align: justify; /* Text aligns to both sides */
 }
