@@ -20,3 +20,82 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+#postcontainer {
+    margin: 40px auto; /* Centers the content block */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.article-content-card {
+    padding: 10px;
+    overflow: hidden; /* **Crucial for clearfix** to contain the floated image */
+}
+
+.main-article-title h2 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-align: center; /* Centered title on small screens */
+}
+
+/* --- IMAGE BLOCK STYLES (Floated Right) --- */
+.article-image-block {
+    width: 100%; /* Default full width on small screens */
+    margin-bottom: 20px; /* Space below image on small screens */
+    text-align: center; /* Centers image on small screens */
+    overflow: hidden; /* Ensures image corners respect border-radius */
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-image-block img {
+    width: 100%; /* Image fills its block */
+    height: auto; /* Maintains aspect ratio *//* Removes extra space below image */
+    max-width: 300px;
+    max-height: 200px; /* Limits the image size even when block is wider */
+    object-fit: contain; /* Image covers the area, potentially cropping */
+}
+
+/* --- DESCRIPTION TEXT STYLES --- */
+.article-body-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify; /* Text aligns to both sides */
+}
+
+.additional-article-text {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+/* Media query for larger screens (tablets and desktops) */
+@media (min-width: 768px) {
+    .main-article-title h2 {
+        text-align: left; /* Align title left on larger screens */
+    }
+
+    .article-image-block {
+        float: right; /* **Floats the image to the right** */
+        width: 35%; /* Image block takes about a third of the width */
+        max-width: 300px; /* Max size for the image block */
+        margin-left: 30px; /* Space between image and text on its left */
+        margin-bottom: 15px; /* Space below the image when text is flowing */
+        /* Optional: shape-outside for more custom text wrap around image shape */
+        /* shape-outside: url(path/to/your/image.png); */
+        /* shape-margin: 10px; */
+    }
+
+    /* **Crucial for text to extend full width after wrapping** */
+    .article-body-description,
+    .additional-article-text {
+        clear: both; /* Forces these elements to start below any floated elements (the image) */
+        margin-top: 0; /* Reset or adjust margin as needed after clearing */
+    }
+}
