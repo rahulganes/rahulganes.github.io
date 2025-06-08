@@ -16,11 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Create the card's inner HTML
                 card.innerHTML = `
+                    <a href = "./post.html?postid=${item.id}">
                     <img src="${item.imageUrl}" alt="${item.title}" class="cardcontent-image">
                     <div class="cardcontent-content">
                         <h2 class="cardcontent-title">${item.title}</h2>
                         <p class="cardcontent-description">${item.description}</p>
                     </div>
+                    </a>
                 `;
 
                 // Append the card to the container

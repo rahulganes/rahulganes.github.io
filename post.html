@@ -1,0 +1,84 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/cardcontent.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Rahul Ganesh</title>
+        <link rel="icon" type="image/x-icon" href="/res/img/favicon.ico">
+    </head>
+
+    <body class="grey lighten-2">
+
+        <div class="navbar-fixed">
+        <nav class="indigo">
+            <div class="nav-wrapper">
+            <a href="#Main" class="brand-logo">
+				<img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" >
+			</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+            </div>
+        </nav>
+        </div>
+        
+        <ul class="sidenav center indigo" style="padding-top: 50%;" id="mobile-demo" >
+            <li><img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" ></li>
+            <li><h4 style="color: white;" href="sass.html">Posts</h5></li>
+            <li><h4 style="color: white;" href="sass.html">About</h3></li>
+            <li><h4 style="color: white;" href="sass.html">Gallery</h4></li>
+            <li><h4 style="color: white;" href="sass.html">Contact</h4></li>
+        </ul>
+
+        <div id="cardcontent-container" class="cardcontent-container"></div>
+
+        <footer class="page-footer indigo" style="margin-top: 10px;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+        
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+            
+    </script>
+    <script type="text/javascript" src="js/postloader.js"></script>
+    </body>
+  </html>
