@@ -26,5 +26,27 @@
     "imageUrl": "https://via.placeholder.com/300x200/367588/FFFFFF?text=Jeans",
     "description": "Classic straight-fit denim jeans that are both durable and stylish.",
     "price": "$75.00"
+  },
+    {
+    "id": 5,
+    "title": "Denim Jeans",
+    "imageUrl": "https://via.placeholder.com/300x200/367588/FFFFFF?text=Jeans",
+    "description": "Classic straight-fit denim jeans that are both durable and stylish.",
+    "price": "$75.00"
+  },
+  
+    {
+    "id": 5,
+    "title": "Denim Jeans",
+    "imageUrl": "https://via.placeholder.com/300x200/367588/FFFFFF?text=Jeans",
+    "description": "Classic straight-fit denim jeans that are both durable and stylish.",
+    "price": "$75.00"
+  },
+    {
+    "id": 5,
+    "title": "Denim Jeans",
+    "imageUrl": "https://via.placeholder.com/300x200/367588/FFFFFF?text=Jeans",
+    "description": "Classic straight-fit denim jeans that are both durable and stylish.",
+    "price": "$75.00"
   }
 ]

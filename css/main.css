@@ -1,0 +1,22 @@
+
+    .main-container {
+      float: left;
+      position: relative;
+      left: 50%;
+    }
+    .fixer-container {
+      float: left;
+      position: relative;
+      left: -50%;
+    }
+
+    .logo {
+    display: inline-block;
+    height: 100%;
+}
+
+.logo>img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
