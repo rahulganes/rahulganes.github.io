@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Leather Jacket",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu",
+    "price": "$199.99"
+  },
+  {
+    "id": 2,
+    "title": "Modern Wristwatch",
+    "imageUrl": "https://via.placeholder.com/300x200/4F4F4F/FFFFFF?text=Watch",
+    "description": "A sleek and stylish wristwatch with a stainless steel band and a minimalist face.",
+    "price": "$120.00"
+  },
+  {
+    "id": 3,
+    "title": "Comfortable Sneakers",
+    "imageUrl": "https://via.placeholder.com/300x200/9B9B9B/FFFFFF?text=Sneakers",
+    "description": "Lightweight and breathable sneakers designed for everyday comfort and support.",
+    "price": "$89.50"
+  },
+  {
+    "id": 4,
+    "title": "Denim Jeans",
+    "imageUrl": "https://via.placeholder.com/300x200/367588/FFFFFF?text=Jeans",
+    "description": "Classic straight-fit denim jeans that are both durable and stylish.",
+    "price": "$75.00"
+  }
+]
