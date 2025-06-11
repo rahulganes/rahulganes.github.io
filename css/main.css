@@ -67,6 +67,14 @@
     width: 50%; /* Limits the image width */
     height: auto; /* Maintains aspect ratio */
   }
+.fl-image {
+    margin-right: 10px; /* Adds space between the image and the text to its left */
+    margin-bottom: 10px;
+    float: left; /* Floats the image to the right *//* Adds space below the image */
+    max-width: 350dp;
+    width: 50%; /* Limits the image width */
+    height: auto; /* Maintains aspect ratio */
+  }
 
 p{
     font-size: 1.3em;
