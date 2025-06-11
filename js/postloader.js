@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="image-wrapper">
                             <img style="width:100%; height:auto; " src="${foundItem.imageUrl}" alt="${foundItem.title}">
                         </div>
-                        <p class="article-body-description">${foundItem.description}</p>
+                        <div class="image-container">
+                        <p>${foundItem.description}</p>
+                        </div>
                     </div>
 
                 `;

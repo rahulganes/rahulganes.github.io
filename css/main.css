@@ -21,6 +21,7 @@
     transform: translateY(-50%);
 }
 
+
 #postcontainer {
     margin: 40px auto; /* Centers the content block */
     background-color: #fff;
@@ -53,6 +54,26 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.image-container {
+    /* Clearfix to contain floated elements */
+    overflow: auto; 
+  }
+
+  .fr-image {
+    margin-left: 10px; /* Adds space between the image and the text to its left */
+    margin-bottom: 10px;
+    float: right; /* Floats the image to the right *//* Adds space below the image */
+    max-width: 350dp;
+    width: 50%; /* Limits the image width */
+    height: auto; /* Maintains aspect ratio */
+  }
+
+p{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
 .article-image-block img {
     width: 100%; /* Image fills its block */
     height: auto; /* Maintains aspect ratio *//* Removes extra space below image */
@@ -61,6 +82,10 @@
     object-fit: contain; /* Image covers the area, potentially cropping */
 }
 
+.a-img-right{
+    float:right;
+    max-width: 50%;
+}
 /* --- DESCRIPTION TEXT STYLES --- */
 .article-body-description {
     font-size: 1.5em;
