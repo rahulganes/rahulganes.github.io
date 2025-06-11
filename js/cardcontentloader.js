@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${item.imageUrl}" alt="${item.title}" class="cardcontent-image">
                     <div class="cardcontent-content">
                         <h2 class="cardcontent-title">${item.title}</h2>
-                        <p class="cardcontent-description">${item.description}</p>
+                        <p class="cardcontent-description">${item.short_description}</p>
                     </div>
                     </a>
                 `;
