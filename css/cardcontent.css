@@ -27,6 +27,7 @@
 }
 
 .cardcontent-title {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
