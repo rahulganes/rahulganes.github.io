@@ -27,7 +27,7 @@
 }
 
 .cardcontent-title {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #333;
     margin: 0 0 10px;
@@ -38,7 +38,7 @@
     color: #666;
     overflow: hidden;
    display: -webkit-box;
-   -webkit-line-clamp: 1; /* number of lines to show */
-           line-clamp: 1; 
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
    -webkit-box-orient: vertical;
 }

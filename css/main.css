@@ -65,7 +65,7 @@
 .article-body-description {
     font-size: 1.5em;
     margin-bottom: 20px;
-    text-align: justify; /* Text aligns to both sides */
+    text-align: left; /* Text aligns to both sides */
 }
 
 .additional-article-text {
