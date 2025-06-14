@@ -170,6 +170,8 @@ p{
   font-family: 'FontAwesome';
   top: 0;
   content:"❝";
+  left: 50%;
+  transform: translateX(-50%); 
   font-size: 200px;
   color: rgba(0,0,0,0.1);
   border:none;
