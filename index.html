@@ -13,37 +13,35 @@
     </head>
 
     <body>
-        <div class="navbar-fixed">
-        <nav class="indigo">
-            <div class="nav-wrapper">
-            <a href="./index.html" class="brand-logo">
-				<img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" >
-			</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down flow-text">
-                <li><a href="posts_container.html">Posts</a></li>
-                <li><a href="badges.html">About</a></li>
-                <li><a href="collapsible.html">Gallery</a></li>
-                <li><a href="mobile.html">Contact</a></li>
-            </ul>
-            </div>
-        </nav>
-        </div>
+      <nav class="navbar-fixed indigo">
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo">
+            <img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" >
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <b><ul class="right hide-on-med-and-down flow-text">
+              <li><a href="posts_container.html">Posts</a></li>
+                  <li><a href="index.html#about">About</a></li>
+                  <li><a href="collapsible.html">Gallery</a></li>
+                  <li><a href="mobile.html">Contact</a></li>
+              </ul></b>
+              </div>
+          </nav>
         
         <ul class="sidenav center indigo" style="padding-top: 50%;" id="mobile-demo" >
             <li><a href="./index.html"><img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" ></img></a></li>
             <li><a href="./posts_container.html" style="color: white;"><h4>Posts</h4></a></li>
-            <li><h4 style="color: white;" href="index.html">About</h4></li>
+            <li><a href="./index.html#about" style="color: white;"><h4>About</h4></a></li>
             <li><h4 style="color: white;" href="sass.html">Gallery</h4></li>
             <li><h4 style="color: white;" href="sass.html">Contact</h4></li>
         </ul>
 
-        <div class="container">
-            <div class="row" style="display: flex; margin-top: 20px;">
+        <div class="container" style="padding-top: 30px;">
+            <div class="row" style="display: flex;">
                 <div style="width: 45%;align-content: center;"><h3>I am<b><div style="color: #3f51b5;">Rahul Ganesh.</div></b></h3></div>
                 <img class="responsive-img" src="res/img/about/1672327185003-removebg-preview.png" style="border-radius: 15px; width: 55%;object-fit: contain;"></img>
             </div>
-            <div class="divider"></div>
+            <div id="about" class="divider"></div>
             <div class="row">
                 <h5><b>About Myself</b></h5>
                 <blockquote class="blockquote_indigo flow-text">
@@ -124,6 +122,9 @@
 
         $(document).ready(function(){
             $('.sidenav').sidenav();
+            $('.sidenav li').click(() => {
+                $('.sidenav').sidenav('close');
+              })
         });
     </script>
     <script type="text/javascript">
