@@ -14,33 +14,30 @@
 
     <body class="grey lighten-2">
 
-        <div class="navbar-fixed">
-        <nav class="indigo">
-            <div class="nav-wrapper">
-            <a href="./index.html" class="brand-logo">
-				<img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" >
-			</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <b><li><a href="posts_container.html">Posts</a></li>
-                <li><a href="badges.html">About</a></li>
-                <li><a href="collapsible.html">Gallery</a></li>
-                <li><a href="mobile.html">Contact</a></li>
-                </b>
-            </ul>
-            </div>
-        </nav>
-        </div>
+      <div class="navbar-fixed" style="position: fixed;top:0;"><nav class="indigo">
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo">
+            <img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" >
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <b><ul class="right hide-on-med-and-down flow-text">
+              <li><a href="posts_container.html">Posts</a></li>
+                  <li><a href="index.html#about">About</a></li>
+                  <li><a href="collapsible.html">Gallery</a></li>
+                  <li><a href="mobile.html">Contact</a></li>
+              </ul></b>
+              </div>
+          </nav></div>
         
         <ul class="sidenav center indigo" style="padding-top: 50%;" id="mobile-demo" >
             <li><a href="./index.html"><img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" ></img></a></li>
             <li><a href="./posts_container.html" style="color: white;"><h4>Posts</h4></a></li>
-            <li><h4 style="color: white;" href="index.html">About</h3></li>
+            <li><a href="./index.html#about" style="color: white;"><h4>About</h4></a></li>
             <li><h4 style="color: white;" href="sass.html">Gallery</h4></li>
             <li><h4 style="color: white;" href="sass.html">Contact</h4></li>
         </ul>
 
-        <div id="cardcontent-container" class="cardcontent-container container"></div>
+        <div id="cardcontent-container" class="cardcontent-container container" style="padding-top: 60px;"></div>
 
         <footer class="page-footer indigo" style="margin-top: 10px;">
           <div class="container">
