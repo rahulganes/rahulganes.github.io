@@ -13,7 +13,7 @@
     </head>
 
     <body>
-      <nav class="navbar-fixed indigo">
+      <div class="navbar-fixed" style="position: fixed;top:0;"><nav class="indigo">
         <div class="nav-wrapper">
           <a href="./index.html" class="brand-logo">
             <img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" >
@@ -26,7 +26,7 @@
                   <li><a href="mobile.html">Contact</a></li>
               </ul></b>
               </div>
-          </nav>
+          </nav></div>
         
         <ul class="sidenav center indigo" style="padding-top: 50%;" id="mobile-demo" >
             <li><a href="./index.html"><img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" ></img></a></li>
@@ -36,12 +36,13 @@
             <li><h4 style="color: white;" href="sass.html">Contact</h4></li>
         </ul>
 
-        <div class="container" style="padding-top: 30px;">
-            <div class="row" style="display: flex;">
+        <div class="container" style="padding-top:80px;">
+            <div class="row" style="display: flex;margin-bottom: -20px;">
                 <div style="width: 45%;align-content: center;"><h3>I am<b><div style="color: #3f51b5;">Rahul Ganesh.</div></b></h3></div>
                 <img class="responsive-img" src="res/img/about/1672327185003-removebg-preview.png" style="border-radius: 15px; width: 55%;object-fit: contain;"></img>
             </div>
-            <div id="about" class="divider"></div>
+            <div id="about" style="padding-top: 50px;"></div>
+            <div class="divider"></div>
             <div class="row">
                 <h5><b>About Myself</b></h5>
                 <blockquote class="blockquote_indigo flow-text">
@@ -125,7 +126,16 @@
             $('.sidenav li').click(() => {
                 $('.sidenav').sidenav('close');
               })
+            $(document).ready(function () {
+              var menu = $('.menu');
+                  var target = $('#' +menu.attr("data-target"));
+              menu.pushpin({
+                top: target.offset().top,
+              });
+          });
         });
+
+        
     </script>
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
