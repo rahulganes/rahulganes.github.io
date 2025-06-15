@@ -8,8 +8,6 @@
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: 10px solid transparent;
-    margin-left: 5%;
-    margin-right: 5%;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -23,7 +21,6 @@
 
 .cardcontent-content {
     padding: 10px;
-    margin: 5px;
 }
 
 .cardcontent-title {
