@@ -1,0 +1,93 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/cardcontent.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/gallery.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Rahul Ganesh</title>
+        <link rel="icon" type="image/x-icon" href="/res/img/favicon.ico">
+    </head>
+
+    <body class="grey lighten-2">
+
+        <div class="navbar-fixed" style="position: fixed;top:0;"><nav class="indigo">
+        <div class="nav-wrapper">
+          <a href="./" class="brand-logo">
+            <img src="res/img/logo.png" style="filter: invert(100%); max-width: 64px; height: auto;" >
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <b><ul class="right hide-on-med-and-down flow-text">
+              <li><a href="posts_container">Posts</a></li>
+                  <li><a href="./#about">About</a></li>
+                  <li><a href="gallery">Gallery</a></li>
+              </ul></b>
+              </div>
+          </nav>
+        </div>
+        
+        <ul class="sidenav center indigo" style="padding-top: 50%;" id="mobile-demo" >
+            <li><a href="./"><img src="res/img/logo.png" style="filter: invert(100%); max-width: 72px; height: auto;" ></img></a></li>
+            <li><a href="./posts_container" style="color: white;"><h4>Posts</h4></a></li>
+            <li><a href="./#about" style="color: white;"><h4>About</h4></a></li>
+            <li><a href="./gallery" style="color: white;"><h4>Gallery</h4></a></li>
+        </ul>
+
+        <div class="center" style="margin-top: 25vh;">
+        <canvas id="dotlottie-canvas" style="width: 50%; align-items: center;"></canvas>
+        <h4><b>404<br>Page not found.</b></h4>
+        </div>
+
+        <footer class="page-footer indigo" style="margin-top: 10px; position:fixed;bottom: 0;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s7">
+                <h5 class="white-text"><b>Rahul Ganesh</b></h5>
+                <p class="grey-text text-lighten-4">Madurai,Tamil Nadu.</p>
+                <p class="grey-text text-lighten-4">Developed this site for fun, Thanks for visiting.</p>
+              </div>
+              <div class="col l4 offset-l2 s5">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!"><div class="footer_box"><img src="res/img/icons/x.svg" style="width: 14px; margin-right: 5px;"><span>Twitter</span></div></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><div class="footer_box"><img src="res/img/icons/insta.svg" style="width: 14px; margin-right: 5px;"><span>Instagram</span></div></a></li>
+                  <li><a class="grey-text text-lighten-3" href="./#about"><div class="footer_box"><img src="res/img/icons/icon_white.png" style="width: 14px; margin-right: 5px;"><span>About Me</span></div></a></li>
+                  <li><a class="grey-text text-lighten-3" href="./posts_container"><div class="footer_box"><img src="res/img/icons/interests.svg" style="width: 14px; margin-right: 5px;"><span>Posts</span></div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            2025
+            </div>
+          </div>
+        </footer>
+
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+            
+    </script>
+    <script type="module">
+            import { DotLottie } from './node_modules/@lottiefiles/dotlottie-web/dist/index.js';
+            const dotLottie = new DotLottie({
+                autoplay: true,
+                loop: true,
+                canvas: document.querySelector('#dotlottie-canvas'),
+                src: "res/lottie/404.json", // replace with your .lottie or .json file URL
+            });
+    </script>
+    </body>
+  </html>
