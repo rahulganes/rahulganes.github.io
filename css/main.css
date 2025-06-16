@@ -169,7 +169,7 @@ p{
 }
 .blockquote p {
     font-family: "Utopia-italic";
-    font-size: 35px;
+    font-size: 1.5em;
     font-weight: 800px;
     text-align: center;
     border: none;
@@ -182,7 +182,7 @@ p{
   content:"❝";
   left: 50%;
   transform: translateX(-50%); 
-  font-size: 200px;
+  font-size: 180px;
   color: rgba(0,0,0,0.1);
   border:none;
 }
