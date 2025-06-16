@@ -37,8 +37,8 @@
             <li><a href="./gallery" style="color: white;"><h4>Gallery</h4></a></li>
         </ul>
 
-        <div class="center" style="margin-top: 80px;margin-bottom: -80px;">
-        <canvas id="dotlottie-canvas" style="width: 50%; align-items: center;"></canvas>
+        <div class="center container" style="margin-top: 20vh;">
+        <canvas id="dotlottie-canvas" style="max-width: 80%; max-width: 300px; align-items: center;margin-bottom: -15px;"></canvas>
         <h3><b>404<br>Page not found.</b></h3>
         </div>
 
@@ -81,7 +81,7 @@
             
     </script>
     <script type="module">
-            import { DotLottie } from '/node_modules/@lottiefiles/dotlottie-web/dist/index.js';
+            import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
             const dotLottie = new DotLottie({
                 autoplay: true,
                 loop: true,
