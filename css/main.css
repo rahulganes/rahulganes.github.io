@@ -107,6 +107,11 @@ p{
     text-align: justify; /* Text aligns to both sides */
 }
 
+.footer_box {
+   display: flex;
+   align-items:center;
+}
+
 .additional-article-text {
     font-size: 1.3em;
     margin-bottom: 20px;
