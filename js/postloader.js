@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 postcontainer.appendChild(postElement);
             } else {
-                postcontainer.innerHTML = '<p>Sorry, no content found for this ID.</p>';
+                window.location.replace("./404");
             }
         })
         .catch(error => {
