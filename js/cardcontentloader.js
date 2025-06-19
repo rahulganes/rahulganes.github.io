@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Create the card's inner HTML
                 card.innerHTML = `
-                    <a href = "./post?postid=${item.id}">
+                    <a href = "./posts/${item.id}">
                     <img src="${item.imageUrl}" alt="${item.title}" class="cardcontent-image">
                     <div class="cardcontent-content">
                         <h2 class="cardcontent-title">${item.title}</h2>
